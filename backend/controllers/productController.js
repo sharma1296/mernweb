@@ -1,5 +1,5 @@
 import asyncHandler from 'express-async-handler'
-import Product from '../models/productModel.js'
+import Product from "../models/productModel.js"
 
 
 const getProducts = asyncHandler(async (req, res) => {
@@ -60,9 +60,7 @@ const createProduct = asyncHandler(async (req, res) => {
   res.status(201).json(createdProduct)
 })
 
-// @desc    Update a product
-// @route   PUT /api/products/:id
-// @access  Private/Admin
+
 const updateProduct = asyncHandler(async (req, res) => {
   const {
     name,
